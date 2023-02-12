@@ -88,7 +88,7 @@ class TimeInput(Input):
 
 
 class Countdown(Static):
-    """A stopwatch widget."""
+    """A countdown widget."""
 
     def __init__(self):
         super().__init__()
@@ -108,7 +108,7 @@ class Countdown(Static):
             time_display.reset()
 
     def compose(self) -> ComposeResult:
-        """Create child widgets of a stopwatch."""
+        """Create child widgets of a countdown."""
         yield Button("Start", id="start", variant="success")
         yield Button("Stop", id="stop", variant="error")
         yield Button("Reset", id="reset")
@@ -121,7 +121,7 @@ class Countdown(Static):
 
 
 class CountdownApp(App):
-    """A Textual app to manage stopwatches."""
+    """A Textual app to manage countdowns."""
 
     CSS_PATH = "countdown.css"
 
