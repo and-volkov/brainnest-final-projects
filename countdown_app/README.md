@@ -34,3 +34,10 @@ Start application in container
 ```
 docker exec -it countdown_app python3 countdown.py
 ```
+
+### Usage
+When app is running, you have the following options:
+* A - add a new countdown
+* R - remove a countdown
+* I - set a new interval for last added countdown
+* D - toggle dark mode
